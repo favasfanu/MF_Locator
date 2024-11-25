@@ -9984,3 +9984,41 @@ h6,
 }
 
 
+.modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+.modal-header {
+  padding-bottom: 0.5rem; /* Ensure there's some space between the header and body */
+}
+
+#blogModalDate {
+  font-size: 1.1rem;
+  color: #6c757d; /* Grey color for the date */
+}
+
+#blogModalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* Apply styles to the active navbar link */
+.navbar .nav-item.active {
+  background-color: #000; /* Black background */
+  color: #fff !important; /* White text */
+  font-weight: bold; /* Optional: Make it bold */
+}
+
+/* Optional: Hover effect on active tab */
+.navbar .nav-item.active:hover {
+  background-color: #333; /* Slightly lighter black background on hover */
+  color: #fff !important; /* Ensure text stays white */
+}
+html {
+  scroll-behavior: smooth;
+}
+

@@ -46,10 +46,10 @@
                 <a href="#service" class="nav-item nav-link">Service</a>
                 <!-- <a href="#portfolio" class="nav-item nav-link">Portfolio</a>-->
                 <a href="#testimonial" class="nav-item nav-link">Review</a>
-               <!-- <a href="#blog" class="nav-item nav-link">Blog</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>-->
+                <a href="#blog" class="nav-item nav-link">Blog</a>
+               <!--   <a href="#contact" class="nav-item nav-link">Contact</a>-->
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="https://wa.me/91918129380457" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -559,50 +559,49 @@
     <!-- Testimonial End -->
 
 
-    <!-- Blog Start 
-    <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
+    <!-- Blog Start -->
+    <!-- Full-Screen Blog Modal -->
+<!-- Blog Section -->
+<div class="container-fluid pt-5" id="blog">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
+        </div>
+        <div class="row" id="blog-container">
+            <!-- Blog content will be dynamically injected here -->
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Full-Screen Blog Modal -->
+<div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- Date for the blog post, on the first line -->
+                <h5 id="blogModalDate" class="modal-date text-muted mb-2" style="display:block;"></h5>
+                <!-- Title for the blog post, on the second line -->
+                <h5 id="blogModalTitle" class="modal-title mb-2" style="display:block;"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
+            <div class="modal-body">
+                <img id="blogModalImage" src="" class="img-fluid rounded mb-3" alt="Blog Image">
+                <p id="blogModalContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Back to Home</button>
             </div>
         </div>
     </div>
+</div>
+
+
+
     <!-- Blog End -->
 
 
